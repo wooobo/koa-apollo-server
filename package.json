@@ -1,0 +1,28 @@
+{
+  "name": "koa-apollo-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "kay",
+  "license": "MIT",
+  "dependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/koa": "^2.0.49",
+    "@types/koa-bodyparser": "^4.3.0",
+    "@types/koa-router": "^7.0.42",
+    "@types/node": "^12.7.5",
+    "apollo-server-koa": "^2.9.3",
+    "dotenv": "^8.1.0",
+    "graphql": "^14.5.6",
+    "koa": "^2.8.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-router": "^7.4.0",
+    "ts-node-dev": "^1.0.0-pre.42",
+    "tslint": "^5.20.0",
+    "tslint-config-airbnb": "^5.11.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.6.3"
+  },
+  "scripts": {
+    "dev": "NODE_ENV=development ts-node-dev --respawn ./src/server.ts"
+  }
+}
