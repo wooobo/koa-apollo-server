@@ -16,10 +16,12 @@
     "koa": "^2.8.1",
     "koa-bodyparser": "^4.2.1",
     "koa-router": "^7.4.0",
+    "pg": "^7.12.1",
     "ts-node-dev": "^1.0.0-pre.42",
     "tslint": "^5.20.0",
     "tslint-config-airbnb": "^5.11.1",
     "tslint-config-prettier": "^1.18.0",
+    "typeorm": "^0.2.19",
     "typescript": "^3.6.3"
   },
   "scripts": {

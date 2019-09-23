@@ -1,6 +1,7 @@
-import Koa from 'koa'
-import bodyParser from 'koa-bodyparser'
+import Koa from 'koa';
+import bodyParser from 'koa-bodyparser';
 import { ApolloServer, gql } from 'apollo-server-koa';
+import { createConnection } from "typeorm";
 import routes from './routes';
 
 const app = new Koa();
@@ -27,5 +28,18 @@ const server = new ApolloServer({ typeDefs, resolvers });
 
 server.applyMiddleware({ app });
 
+/**
+ * inital tasks exceopt Koa middlewares
+ */
+async function initialize() {
+    try {
+        await createConnection();
+        console.log('Postgres RDBMS Connection!!');
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+initialize();
 
 export default app;
