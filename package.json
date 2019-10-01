@@ -25,6 +25,9 @@
     "typescript": "^3.6.3"
   },
   "scripts": {
-    "dev": "NODE_ENV=development ts-node-dev --respawn ./src/server.ts"
+    "dev": "NODE_ENV=development ts-node-dev --respawn ./src/server.ts",
+    "build": "tsc",
+    "serve": "node dist/server.js",
+    "start": "npm run serve"
   }
 }
